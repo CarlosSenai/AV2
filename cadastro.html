@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+      <h1>FORMULÁRIO CADASTRAL</h1>
+      <form action="backend" method="post">
+          <fieldset>
+              <legend>Dados obrigatórios</legend>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" required><br>
+
+              <label for="idade">Idade:</label>
+              <input type="number" id="idade" min="0" max="100" required><br>
+
+              <label for="dataDeNascimento">Data de Nascimento:</label>
+              <input type="date" id="dataDeNascimento" required><br><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="exemplo@gmail.com" required><br>
+
+              <label for="senha">Senha:</label>
+              <input type="password" id="senha" required><br>
+          </fieldset>
+
+          <fieldset>
+              <legend>Outros</legend>
+              <legend>Sexo</legend>
+            <select name="" id="Sexo">
+              <option value="sexo">Masculino</option>
+              <option value="sexo">Feminino</option>
+              <option value="sexo">Outros</option>
+              <option value="sexo">Não informar</option>
+            </select><br>
+
+            <legend>Escolaridade</legend>
+            <select name="" id="escolaridade">
+              <option value="basico">Ensino Fundamental</option>
+              <option value="medio">Ensino Médio</option>
+              <option value="superior">Ensino Superior</option>
+              <option value="pos">Pós-Graduado</option>
+            </select><br>
+
+            <legend>Raça</legend>
+            <select name="" id="Cor">
+              <option value="Cor">Branco</option>
+              <option value="Cor">Pardo</option>
+              <option value="Cor">Negro</option>
+              <option value="Cor">Indigena</option>
+            </select><br>
+          </fieldset><br>
+
+          <button type="reset">Resetar cadastro</button>
+          <button type="submit">Finalizar cadastro</button><br><br>
+          <input type="submit" value="Cadastro finalizado com sucesso!">
+      </form> 
+    </div>
+  </div>
+</body>
+</html>
